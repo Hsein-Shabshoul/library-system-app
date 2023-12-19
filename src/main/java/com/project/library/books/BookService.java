@@ -20,7 +20,6 @@ import java.util.Map;
 
 @Service
 @Log4j2
-//@RequiredArgsConstructor
 //@AllArgsConstructor
 //all args needed for the HashOperation to have a constructor to work in test mocking
 //need test make it final and remove all args
