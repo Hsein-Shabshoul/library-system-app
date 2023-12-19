@@ -50,4 +50,4 @@ This Spring Boot application serves as a library management system with user aut
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Hsein-Shabshoul/library.git
+   git clone https://github.com/Hsein-Shabshoul/library-system-app.git
