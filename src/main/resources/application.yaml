@@ -1,0 +1,47 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+  cache:
+    type: redis
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  mail:
+    host: smtp.office365.com
+    username: yourEmail
+    password: yourPass
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls.enable: true
+          ssl.trust: smtp.office365.com
+  datasource:
+    url: jdbc:postgresql://localhost:5432/library
+    username: hsein
+    password: 123456
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        #ddl-auto: update
+server:
+  port: 8083
+logging:
+  config: src/main/resources/log4j2.xml
+resolved:
+  cache:
+    ttl: 60
+    enabled: true
+
+springdoc:
+  api-docs:
+    path: /api-docs
+
+redis:
+  reference: Book
